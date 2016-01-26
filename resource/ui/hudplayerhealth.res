@@ -5,15 +5,15 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"HudPlayerHealth"
-			"xpos"			"c-250"		[$WIN32]
+			"xpos"			"c-262"		[$WIN32]
 			"xpos_minmode"	"-5"		[$WIN32]
-			"ypos"			"c35"	[$WIN32]
+			"ypos"			"c59"	[$WIN32]
 			"ypos_minmode"	"r88"	[$WIN32]
 			"xpos"			"32"	[$X360]
 			"ypos"			"r144"	[$X360]
 			"zpos"			"2"
-			"wide"			"250"
-			"tall"			"180"
+			"wide"			"250" //126
+			"tall"			"170"  //56
 			"visible"		"1"
 			"enabled"		"1"	
 			"HealthBonusPosAdj"	"35"
@@ -48,27 +48,95 @@
 			"image"			"../hud/health_bg"
 			"scaleImage"	"1"	
 		}	
-		"PlayerStatusHealthBonusImage"
+//		"PlayerStatusHealthBonusImage" //working, not pleased with style
+//		{
+//			"ControlName"	"ImagePanel"
+//			"fieldName"		"PlayerStatusHealthBonusImage"
+//			"xpos"			"39"	[$WIN32]
+//			"ypos"			"24	"	[$WIN32]
+//			"zpos"			"0"
+//			"wide"			"128"	[$WIN32] //55
+//			"tall"			"68"	[$WIN32] //55
+//			"visible"		"1"
+//			"enabled"		"1"
+//			"pin_to_sibling" "TeamIndicator2"
+//			"pin_corner_to_sibling" "1" 
+//			"pin_to_sibling_corner" "1"
+//			textAlignment 	"center"
+//			"image"			"../hud/freezecam_black_bg"
+//			"scaleImage"	"1"
+// 			}
+		
+		"OverhealImage1"
 		{
 			"ControlName"	"ImagePanel"
-			"fieldName"		"PlayerStatusHealthBonusImage"
-			"xpos"			"9999"	[$WIN32]
-			"ypos"			"9999"	[$WIN32]
-			"zpos"			"2"
-			"wide"			"0"	[$WIN32] //55
-			"tall"			"0"	[$WIN32] //55
-			"visible"		"0"
-			"enabled"		"0"
-			"image"			"../hud/health_over_bg"
-			"scaleImage"	"1"
+			"fieldName"		"OverhealImage1"
+			"xpos"			"58"
+			"ypos"			"25"
+			"zpos"			"0"
+			"wide"			"17"
+			"tall"			"17"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"	
+			"image"			"../hud/health_color"
 			"alpha"			"0"
 		}
+		
+		"OverhealImage2"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"OverhealImage2"
+			"xpos"			"83"
+			"ypos"			"25"
+			"zpos"			"0"
+			"wide"			"17"
+			"tall"			"17"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"	
+			"image"			"../hud/health_color"
+			"alpha"			"0"
+		}
+		
+		"OverhealImage3"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"OverhealImage3"
+			"xpos"			"108"
+			"ypos"			"25"
+			"zpos"			"0"
+			"wide"			"17"
+			"tall"			"17"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"	
+			"image"			"../hud/health_color"
+			"alpha"			"0"
+		}
+		
+		"OverhealImage4"
+		{
+			"ControlName"	"ImagePanel"
+			"fieldName"		"OverhealImage4"
+			"xpos"			"133"
+			"ypos"			"25"
+			"zpos"			"0"
+			"wide"			"17"
+			"tall"			"17"
+			"visible"		"1"
+			"enabled"		"1"
+			"scaleImage"	"1"	
+			"image"			"../hud/health_color"
+			"alpha"			"0"
+		}
+		
 		"PlayerStatusHealthValue"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"PlayerStatusHealthValue"
-			"xpos"			"-9"
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"-22"
+			"ypos"			"-2"	[$WIN32]
 			"zpos"			"5"
 			"wide"			"250"
 			"tall"			"120"
@@ -83,8 +151,8 @@
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"PlayerStatusHealthValueBG"
-			"xpos"			"-7"
-			"ypos"			"2"	[$WIN32]
+			"xpos"			"-20"
+			"ypos"			"0"	[$WIN32]
 			"zpos"			"1"
 			"wide"			"250"
 			"tall"			"120"
@@ -101,24 +169,64 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"HealthBG"
-		"xpos"			"71"
-		"ypos"			"42"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"1"
-		"wide"			"92"
+		"wide"			"105"
 		"tall"			"36"
 		"visible"		"1"
 		"enabled"		"1"
+		"pin_to_sibling" "TeamIndicator3"
+		"pin_corner_to_sibling" "2" 
+		"pin_to_sibling_corner" "3"
 		"fillcolor"		"0 0 0 200"
+		"alpha"			"200"
+	}
+	
+	"HealthBGBuff"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"HealthBGBuff"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"105"
+		"tall"			"36"
+		"visible"		"1"
+		"enabled"		"1"
+		"pin_to_sibling" "TeamIndicator3"
+		"pin_corner_to_sibling" "2" 
+		"pin_to_sibling_corner" "3"
+		"fillcolor"		"0 0 0 200"
+		"alpha"			"0"
 	}
 
+	"HealthBGDying"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"HealthBGDying"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"1"
+		"wide"			"105"
+		"tall"			"36"
+		"visible"		"1"
+		"enabled"		"1"
+		"pin_to_sibling" "TeamIndicator3"
+		"pin_corner_to_sibling" "2" 
+		"pin_to_sibling_corner" "3"
+		"fillcolor"		"235 0 0 200"
+		"alpha"			"0"
+	}
+	
 	"TeamIndicator1"
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TeamIndicator1"
-		"xpos"			"71"
-		"ypos"			"78"
+		"xpos"			"49"
+		"ypos"			"76"
 		"zpos"			"2"
-		"wide"			"92"
+		"wide"			"108"
 		"tall"	 		"2"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -128,7 +236,7 @@
 		"scaleImage"		"1"
 		"teambg_1"		"../hud/color_panel_brown"
 		"teambg_2"		"../hud/color_panel_red_opaque"
-		"teambg_3"		"../hud/color_panel_blu_opaque"
+		"teambg_3"		"../hud/color_panel_blu"
 		
 		
 		
@@ -142,10 +250,10 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TeamIndicator2"
-		"xpos"			"71"
-		"ypos"			"40"
+		"xpos"			"49"
+		"ypos"			"39"
 		"zpos"			"2"
-		"wide"			"92"
+		"wide"			"108"
 		"tall"	 		"2"
 		"autoResize"		"0"
 		"pinCorner"		"0"
@@ -155,7 +263,7 @@
 		"scaleImage"		"1"
 		"teambg_1"		"../hud/color_panel_brown"
 		"teambg_2"		"../hud/color_panel_red_opaque"
-		"teambg_3"		"../hud/color_panel_blu_opaque"
+		"teambg_3"		"../hud/color_panel_blu"
 		
 		
 		
@@ -169,8 +277,8 @@
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TeamIndicator3"
-		"xpos"			"71"
-		"ypos"			"42"
+		"xpos"			"49"
+		"ypos"			"40"
 		"zpos"			"2"
 		"wide"			"2"
 		"tall"	 		"36"
@@ -181,7 +289,7 @@
 		"image"			"../hud/color_panel_brown"
 		"scaleImage"		"1"
 		"teambg_1"		"../hud/color_panel_brown"
-		"teambg_2"		"../hud/color_panel_red"
+		"teambg_2"		"../hud/color_panel_red_opaque"
 		"teambg_3"		"../hud/color_panel_blu"
 		
 		
@@ -192,23 +300,26 @@
 		"draw_corner_height" 		"0"	
 	}
 
+	
 	"TeamIndicator4"
 	{
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TeamIndicator4"
-		"xpos"			"161"
-		"ypos"			"42"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"2"
 		"wide"			"2"
 		"tall"	 		"36"
 		"autoResize"		"0"
-		"pinCorner"		"0"
+		"pin_to_sibling" "TeamIndicator2"
+		"pin_corner_to_sibling" "1" 
+		"pin_to_sibling_corner" "3"
 		"visible" "1" 
 		"enabled" "1"
 		"image"			"../hud/color_panel_brown"
 		"scaleImage"		"1"
 		"teambg_1"		"../hud/color_panel_brown"
-		"teambg_2"		"../hud/color_panel_red"
+		"teambg_2"		"../hud/color_panel_red_opaque"
 		"teambg_3"		"../hud/color_panel_blu"
 		
 		

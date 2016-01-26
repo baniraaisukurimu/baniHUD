@@ -16,8 +16,8 @@
 		"fieldName" "HudWeaponAmmo"
 		"visible" "1"
 		"enabled" "1"
-		"xpos"	"c0"	[$WIN32]
-		"ypos"	"c35"	[$WIN32]
+		"xpos"	"c20"	[$WIN32]
+		"ypos"	"c55"	[$WIN32]
 		"wide"	"250"
 		"tall"	"180"
 	}
@@ -72,14 +72,10 @@
 		"fieldName"		"HudMedicCharge"
 		"visible"		"1"
 		"enabled"		"1"
-		"xpos"			"r138"	[$WIN32]
-		"xpos_minmode"	"r100"	[$WIN32]
-		"ypos"			"r69"	[$WIN32]
-		"ypos_minmode"	"r34"	[$WIN32]
-		"xpos"			"r174"	[$X360]
-		"ypos"			"r90"	[$X360]
-		"wide"			"200"
-		"tall"			"100"
+		"xpos"			"c-248"	[$WIN32]
+		"ypos"			"c35"	[$WIN32]
+		"wide"			"500"
+		"tall"			"180"
 	}
 	
 	HudDemomanCharge
@@ -1470,5 +1466,21 @@
 		"ypos"	"0"
 		"wide"	"f0"
 		"tall"	"f0"
+	}
+	
+	"TransparentViewmodelMask"
+	{
+		//alpha doesn't work for this, you need to change the texture's alpha
+		"ControlName"	"ImagePanel"
+		"fieldName"		"TransparentViewmodelMask"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-100"
+		"wide"			"f0"
+		"tall"			"480"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/REFRACTnormal_transparentvmt"
+		"scaleImage"	"1"
 	}
 }
