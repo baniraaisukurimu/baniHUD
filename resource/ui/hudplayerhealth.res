@@ -7,13 +7,13 @@
 			"fieldName"		"HudPlayerHealth"
 			"xpos"			"c-262"		[$WIN32]
 			"xpos_minmode"	"-5"		[$WIN32]
-			"ypos"			"c59"	[$WIN32]
+			"ypos"			"c-41"	[$WIN32]
 			"ypos_minmode"	"r88"	[$WIN32]
 			"xpos"			"32"	[$X360]
 			"ypos"			"r144"	[$X360]
 			"zpos"			"2"
-			"wide"			"250" //126
-			"tall"			"170"  //56
+			"wide"			"350" //126
+			"tall"			"370"  //56
 			"visible"		"1"
 			"enabled"		"1"	
 			"HealthBonusPosAdj"	"35"
@@ -72,7 +72,7 @@
 			"ControlName"	"ImagePanel"
 			"fieldName"		"OverhealImage1"
 			"xpos"			"58"
-			"ypos"			"25"
+			"ypos"			"125"
 			"zpos"			"0"
 			"wide"			"17"
 			"tall"			"17"
@@ -88,7 +88,7 @@
 			"ControlName"	"ImagePanel"
 			"fieldName"		"OverhealImage2"
 			"xpos"			"83"
-			"ypos"			"25"
+			"ypos"			"125"
 			"zpos"			"0"
 			"wide"			"17"
 			"tall"			"17"
@@ -104,7 +104,7 @@
 			"ControlName"	"ImagePanel"
 			"fieldName"		"OverhealImage3"
 			"xpos"			"108"
-			"ypos"			"25"
+			"ypos"			"125"
 			"zpos"			"0"
 			"wide"			"17"
 			"tall"			"17"
@@ -120,7 +120,7 @@
 			"ControlName"	"ImagePanel"
 			"fieldName"		"OverhealImage4"
 			"xpos"			"133"
-			"ypos"			"25"
+			"ypos"			"125"
 			"zpos"			"0"
 			"wide"			"17"
 			"tall"			"17"
@@ -136,7 +136,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"PlayerStatusHealthValue"
 			"xpos"			"-22"
-			"ypos"			"-2"	[$WIN32]
+			"ypos"			"98"	[$WIN32]
 			"zpos"			"5"
 			"wide"			"250"
 			"tall"			"120"
@@ -145,14 +145,14 @@
 			"labelText"		"%Health%"
 			"textAlignment"	"center"	
 			"font"			"RobotoBlack48"
-			"fgcolor"		"255 255 255 255"
+			"fgcolor"		"255 255 255 225"
 		}	
 		"PlayerStatusHealthValueBG"
 		{
 			"ControlName"	"CExLabel"
 			"fieldName"		"PlayerStatusHealthValueBG"
 			"xpos"			"-20"
-			"ypos"			"0"	[$WIN32]
+			"ypos"			"100"	[$WIN32]
 			"zpos"			"1"
 			"wide"			"250"
 			"tall"			"120"
@@ -180,7 +180,7 @@
 		"pin_corner_to_sibling" "2" 
 		"pin_to_sibling_corner" "3"
 		"fillcolor"		"0 0 0 200"
-		"alpha"			"200"
+		"alpha"			"255"
 	}
 	
 	"HealthBGBuff"
@@ -224,7 +224,7 @@
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TeamIndicator1"
 		"xpos"			"49"
-		"ypos"			"76"
+		"ypos"			"176"
 		"zpos"			"2"
 		"wide"			"108"
 		"tall"	 		"2"
@@ -251,7 +251,7 @@
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TeamIndicator2"
 		"xpos"			"49"
-		"ypos"			"39"
+		"ypos"			"139"
 		"zpos"			"2"
 		"wide"			"108"
 		"tall"	 		"2"
@@ -278,7 +278,7 @@
 		"ControlName"		"CTFImagePanel"
 		"fieldName"		"TeamIndicator3"
 		"xpos"			"49"
-		"ypos"			"40"
+		"ypos"			"140"
 		"zpos"			"2"
 		"wide"			"2"
 		"tall"	 		"36"
@@ -409,12 +409,25 @@
 			"image"			"../vgui/marked_for_death"
 			"fgcolor"		"TanDark"
 		}
+		
+		"VaccAnchor"
+		{
+			"ControlName"	"EditablePanel"
+			"fieldName"		"VaccAnchor"
+			"xpos"			"150"
+			"ypos"			"2"
+			"wide"			"40"
+			"tall"			"40"
+			"visible"		"1"
+			"enabled"		"1"
+		}
+		
 		"PlayerStatus_MedicUberBulletResistImage"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"PlayerStatus_MedicUberBulletResistImage"
-			"xpos"			"85"
-			"xpos_minmode"	"70"
+			"xpos"			"0"
+			"xpos_minmode"	"0"
 			"ypos"			"0"
 			"zpos"			"7"
 			"wide"			"31"
@@ -422,6 +435,10 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"scaleImage"	"1"	
+			"pin_to_sibling" "VaccAnchor"
+			"pin_corner_to_sibling" "1" 
+			"pin_to_sibling_corner" "1"
+			"alpha"			"255"
 			"image"			"../HUD/defense_buff_bullet_blue"
 			"fgcolor"		"TanDark"
 		}
@@ -429,8 +446,8 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"PlayerStatus_MedicUberBlastResistImage"
-			"xpos"			"85"
-			"xpos_minmode"	"70"
+			"xpos"			"0"
+			"xpos_minmode"	"0"
 			"ypos"			"0"
 			"zpos"			"7"
 			"wide"			"31"
@@ -438,6 +455,10 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"scaleImage"	"1"	
+			"pin_to_sibling" "VaccAnchor"
+			"pin_corner_to_sibling" "1" 
+			"pin_to_sibling_corner" "1"
+			"alpha"			"255"
 			"image"			"../HUD/defense_buff_explosion_blue"
 			"fgcolor"		"TanDark"
 		}
@@ -445,41 +466,49 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"PlayerStatus_MedicUberFireResistImage"
-			"xpos"			"85"
-			"xpos_minmode"	"70"
+			"xpos"			"0"
+			"xpos_minmode"	"0"
 			"ypos"			"0"
 			"zpos"			"7"
 			"wide"			"31"
 			"tall"			"31"
 			"visible"		"1"
 			"enabled"		"1"
-			"scaleImage"	"1"	
+			"scaleImage"	"1"
+			"pin_to_sibling" "VaccAnchor"
+			"pin_corner_to_sibling" "1" 
+			"pin_to_sibling_corner" "1"
+			"alpha"			"255"			
 			"image"			"../HUD/defense_buff_fire_blue"
 			"fgcolor"		"TanDark"
 		}
-
+		
 		"PlayerStatus_MedicSmallBulletResistImage"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"PlayerStatus_MedicSmallBulletResistImage"
-			"xpos"			"85"
-			"xpos_minmode"	"70"
+			"xpos"			"0"
 			"ypos"			"0"
 			"zpos"			"7"
-			"wide"			"31"
-			"tall"			"31"
+			"wide"			"30"
+			"tall"			"30"
 			"visible"		"1"
 			"enabled"		"1"
-			"scaleImage"	"1"	
+			"scaleImage"	"1"
+			"pin_to_sibling" "VaccAnchor"
+			"pin_corner_to_sibling" "1" 
+			"pin_to_sibling_corner" "1"
+			"alpha"			"180"
 			"image"			"../HUD/defense_buff_bullet_blue"
 			"fgcolor"		"TanDark"
+			
 		}
 		"PlayerStatus_MedicSmallBlastResistImage"
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"PlayerStatus_MedicSmallBlastResistImage"
-			"xpos"			"85"
-			"xpos_minmode"	"70"
+			"xpos"			"0"
+			"xpos_minmode"	"0"
 			"ypos"			"0"
 			"zpos"			"7"
 			"wide"			"31"
@@ -487,6 +516,10 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"scaleImage"	"1"	
+			"pin_to_sibling" "VaccAnchor"
+			"pin_corner_to_sibling" "1" 
+			"pin_to_sibling_corner" "1"
+			"alpha"			"180"
 			"image"			"../HUD/defense_buff_explosion_blue"
 			"fgcolor"		"TanDark"
 		}
@@ -494,8 +527,8 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"PlayerStatus_MedicSmallFireResistImage"
-			"xpos"			"85"
-			"xpos_minmode"	"70"
+			"xpos"			"0"
+			"xpos_minmode"	"0"
 			"ypos"			"0"
 			"zpos"			"7"
 			"wide"			"31"
@@ -503,6 +536,10 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"scaleImage"	"1"	
+			"pin_to_sibling" "VaccAnchor"
+			"pin_corner_to_sibling" "1" 
+			"pin_to_sibling_corner" "1"
+			"alpha"			"180"
 			"image"			"../HUD/defense_buff_fire_blue"
 			"fgcolor"		"TanDark"
 		}
