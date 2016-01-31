@@ -1,5 +1,28 @@
 "Resource/HudLayout.res"
 {
+
+	WingsSmall
+	{
+		"controlName"	"CExLabel"
+		"fieldName"	 	"WingsSmall"
+		"visible"		"1"
+		"enabled"		"1"
+		"zpos"			"2"
+
+		"xpos"			"c-75"
+		"ypos"			"c-25"
+		"wide"			"150"
+		"tall"			"50"
+
+		//"font"			"CrosshairsOutline34"
+		"font"			"RobotoRegular16"
+		"labelText"		"{       }"
+		"textAlignment"	"center"	
+		
+		"fgcolor"		"255 255 255 255"
+		"Alpha" "0"
+	}
+	
 	HudPlayerStatus
 	{
 		"fieldName" "HudPlayerStatus"
@@ -191,13 +214,10 @@
 	CHudAccountPanel
 	{
 		"fieldName"				"CHudAccountPanel"
-		"xpos"					"r162"	[$WIN32]
-		"ypos"					"r152"	[$WIN32]
-		"ypos_minmode"			"r134"	[$WIN32]
-		"xpos"					"r194"	[$X360]
-		"ypos"					"r174"	[$X360]
-		"wide"					"116"
-		"tall"  				"180"
+		"xpos"			"c-228"	[$WIN32]
+		"ypos"			"c59"	[$WIN32]
+		"wide"			"500"
+		"tall"			"180"
 		"visible" 				"1"
 		"enabled" 				"1"
 		"PaintBackgroundType"	"2"
@@ -210,7 +230,7 @@
 		"xpos_minmode"			"61"
 		"ypos"					"r152"
 		"ypos_minmode"			"r134"
-		"wide"					"116"
+		"wide"					"300"
 		"tall"  				"180"
 		"visible" 				"1"
 		"enabled" 				"1"
@@ -416,6 +436,18 @@
 
 	HudDamageIndicator
 	{
+	 
+	"fieldName" "HudDamageIndicator"
+	"visible" "1"
+	"enabled" "1"
+	"MinimumWidth" "10"
+	"MaximumWidth" "40"            
+	"StartRadius" "80"
+	"EndRadius" "80"
+	"MinimumHeight" "30"
+	"MaximumHeight" "40"
+	"MinimumTime" "1"
+        
 
 	}
 
@@ -975,10 +1007,10 @@
 		"fieldName" 	"HudMenuEngyBuild"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-225"
-		"ypos"			"c-55"
-		"wide"			"450"
-		"tall"			"195"
+		"xpos"			"c-177"
+		"ypos"			"c-170"
+		"wide"			"f0"
+		"tall"			"480"
 		"PaintBackgroundType"	"0"
 	}
 	
@@ -987,10 +1019,10 @@
 		"fieldName" 	"HudMenuEngyDestroy"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-225"
-		"ypos"			"c-59"
+		"xpos"			"c-177"
+		"ypos"			"c-170"
 		"wide"			"450"
-		"tall"			"200"
+		"tall"			"480"
 		"PaintBackgroundType"	"0"
 	}
 
@@ -999,10 +1031,10 @@
 		"fieldName" 	"HudEurekaEffectTeleportMenu"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-125"
-		"ypos"			"c-55"
-		"wide"			"250"
-		"tall"			"195"
+		"xpos"			"c-181"
+		"ypos"			"c-25"
+		"wide"			"450"
+		"tall"			"480"
 		"PaintBackgroundType"	"0"
 	}
 	

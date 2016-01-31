@@ -218,7 +218,7 @@ event HudHealthBonusPulse
 Event CustomOverheal
 {
 	RunEvent OverhealAnimation11 0.8
-	RunEvent OverhealAnimation21 0.0
+	RunEvent OverhealAnimation21 0.1
 	RunEvent OverhealAnimation31 1.7
 	RunEvent OverhealAnimation41 1.2
 }
@@ -308,7 +308,7 @@ Event OverhealAnimation3Loop2
 	Animate	OverhealImage3				 	Alpha		"0"					Linear 0.0 0.0
 	Animate OverhealImage3					ypos		"125"				Linear 0.0 0.0
 	RunEvent OverhealAnimation31		1.6
-}	
+} 	
 
 Event OverhealAnimation41
 {
@@ -349,31 +349,32 @@ event HudHealthBonusPulseStop
 
 Event CustomOverhealStop
 {
+	Animate	OverhealImage1				 	Alpha		"0"					Linear 0.0 0.0
+	Animate	OverhealImage1					ypos		"125"					Linear 0.0 0.0
+	Animate	OverhealImage2				 	Alpha		"0"					Linear 0.0 0.0
+	Animate	OverhealImage2					ypos		"125"					Linear 0.0 0.0
+	Animate	OverhealImage3				 	Alpha		"0"					Linear 0.0 0.0
+	Animate	OverhealImage3					ypos		"125"					Linear 0.0 0.0
+	Animate	OverhealImage4				 	Alpha		"0"					Linear 0.0 0.0
+	Animate	OverhealImage4					ypos		"125"					Linear 0.0 0.0
 	StopEvent HudHealthBonusPulse 0.0
 	StopEvent OverhealAnimation11 0.0
-	StopEvent OverhealAnimation1Loop1 0.0
 	StopEvent OverhealAnimation21 0.0
-	StopEvent OverhealAnimation2Loop1 0.0
 	StopEvent OverhealAnimation31 0.0
-	StopEvent OverhealAnimation3Loop1 0.0
 	StopEvent OverhealAnimation41 0.0
-	StopEvent OverhealAnimation4Loop1 0.0
 	StopEvent OverhealAnimation12 0.0
-	StopEvent OverhealAnimation1Loop2 0.0
 	StopEvent OverhealAnimation22 0.0
-	StopEvent OverhealAnimation2Loop2 0.0
 	StopEvent OverhealAnimation32 0.0
-	StopEvent OverhealAnimation3Loop2 0.0
 	StopEvent OverhealAnimation42 0.0
+	StopEvent OverhealAnimation1Loop1 0.0
+	StopEvent OverhealAnimation2Loop1 0.0
+	StopEvent OverhealAnimation3Loop1 0.0
+	StopEvent OverhealAnimation4Loop1 0.0
+	StopEvent OverhealAnimation1Loop2 0.0
+	StopEvent OverhealAnimation2Loop2 0.0
+	StopEvent OverhealAnimation3Loop2 0.0
 	StopEvent OverhealAnimation4Loop2 0.0
-	Animate	OverhealImage1				 	Alpha		"0"					Linear 0.0 0.0
-	Animate	OverhealImage1					ypos		"25"					Linear 0.0 0.0
-	Animate	OverhealImage2				 	Alpha		"0"					Linear 0.0 0.0
-	Animate	OverhealImage2					ypos		"25"					Linear 0.0 0.0
-	Animate	OverhealImage3				 	Alpha		"0"					Linear 0.0 0.0
-	Animate	OverhealImage3					ypos		"25"					Linear 0.0 0.0
-	Animate	OverhealImage4				 	Alpha		"0"					Linear 0.0 0.0
-	Animate	OverhealImage4					ypos		"25"					Linear 0.0 0.0
+	StopEvent CustomOverheal 0.0
 }
 
 //===========================================
@@ -500,32 +501,32 @@ event FlagOutline
 // Spy Disguise
 event HudSpyDisguiseChanged
 {
-	Animate PlayerStatusSpyOutlineImage		Alpha		"255"			Linear 0.0 0.2
+	Animate PlayerStatusSpyOutlineImage		Alpha		"0"			Linear 0.0 0.0
 	
-	Animate PlayerStatusSpyOutlineImage		Position	"c-200 c-200"	Linear 0.0 0.2
-	Animate PlayerStatusSpyOutlineImage		Size		"400 400"		Linear 0.0 0.2
+	//Animate PlayerStatusSpyOutlineImage		Position	"c-200 c-200"	Linear 0.0 0.2
+	//Animate PlayerStatusSpyOutlineImage		Size		"400 400"		Linear 0.0 0.2
 
-	RunEvent HudSpyDisguiseHide	0.7
+	//RunEvent HudSpyDisguiseHide	0.7
 }
 
 event HudSpyDisguiseHide
 {
-	Animate PlayerStatusSpyOutlineImage		Position	"3 413"			Linear 0.0 0.2
-	Animate PlayerStatusSpyOutlineImage		Size		"55 55"			Linear 0.0 0.2
+	//Animate PlayerStatusSpyOutlineImage		Position	"3 413"			Linear 0.0 0.2
+	//Animate PlayerStatusSpyOutlineImage		Size		"55 55"			Linear 0.0 0.2
 	
-	Animate PlayerStatusSpyOutlineImage		Alpha		"0"				Linear 0.2 0.1
+	Animate PlayerStatusSpyOutlineImage		Alpha		"0"				Linear 0.0 0.0
 }
 
 event HudSpyDisguiseFadeIn
 {
-	RunEvent HudSpyDisguiseChanged	0
-	Animate PlayerStatusSpyImage			Alpha		"255"			Linear 0.9 0.1	
+	//RunEvent HudSpyDisguiseChanged	0
+	Animate PlayerStatusSpyImage			Alpha		"0"			Linear 0.0 0.0	
 }
 
 event HudSpyDisguiseFadeOut
 {
-	RunEvent HudSpyDisguiseChanged	0
-	Animate PlayerStatusSpyImage			Alpha		"0"				Linear 0.9 0.1	
+	//RunEvent HudSpyDisguiseChanged	0
+	Animate PlayerStatusSpyImage			Alpha		"0"				Linear 0.0 0.0	
 }
 
 //===========================================
@@ -949,7 +950,8 @@ event NotificationsPresentBlinkStop
 
 event DamagedPlayer
 {
-	// empty
+	Animate WingsSmall Alpha 255 Linear 0.0 0.1
+	Animate WingsSmall Alpha 0 Linear 0.3 0.4
 }
 
 //===========================================
