@@ -1,4 +1,4 @@
-"Resource/UI/build_menu/base_unavailable.res"
+"Resource/UI/build_menu/base_already_built.res"
 {
 	"ItemNameLabel"
 	{	
@@ -6,10 +6,9 @@
 		"fieldName"		"ItemNameLabel"
 		"font"			"RobotoRegular16"
 		"xpos"			"6"
-		"ypos"			"10"
+		"ypos"			"0"
 		"zpos"			"1"
 		"wide"			"84"
-		"fgcolor"		"115 115 115 225"
 		"tall"			"15"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -20,6 +19,7 @@
 		"textAlignment"	"Center"
 		"dulltext"		"0"
 		"brighttext"	"0"
+		"fgcolor"		"20 180 20 225"
 	}
 	
 	"ItemBackground"	
@@ -35,7 +35,7 @@
 		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"hud_menu_item_bg_outline"
-		"iconColor"		"ProgressOffWhiteTransparent"
+		"iconColor"		"0 0 0 255"
 	}
 	
 	"CantBuildReason"
@@ -48,17 +48,88 @@
 		"zpos"			"2"
 		"wide"			"80"
 		"tall"			"18"
-		"fgcolor"		"115 115 115 225"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"#Hud_Menu_Build_Unavailable"
+		"labelText"		"#Hud_Menu_Build_Already_Built"
 		"textAlignment"	"Center"
 		"dulltext"		"0"
 		"brighttext"	"0"
+		"fgcolor"		"20 180 20 205"
 	}
-
+	
+	"MetalIcon"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"MetalIcon"
+		"xpos"			"33"
+		"ypos"			"19"
+		"zpos"			"1"
+		"wide"			"8"
+		"tall"			"8"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"ico_metal"
+		"iconColor"		"20 180 20 205"
+	}
+	
+	"MetalIconBG"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"MetalIconBG"
+		"xpos"			"34"
+		"ypos"			"19"
+		"zpos"			"1"
+		"wide"			"8"
+		"tall"			"8"
+		"visible"		"0"
+		"enabled"		"0"
+		"scaleImage"	"1"	
+		"icon"			"ico_metal"
+		"iconColor"		"60 60 60 100"
+	}
+	
+	"CostLabel"
+	{	
+		"ControlName"	"CExLabel"
+		"fieldName"		"CostLabel"
+		"font"			"RobotoRegular12"
+		"fgcolor"		"20 180 20 205"
+		"xpos"			"42"
+		"ypos"			"17"
+		"zpos"			"1"
+		"wide"			"84"
+		"tall"			"13"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%metal%"
+		"textAlignment"	"Left"	
+	}
+	
+	
+	"CostLabelBG"
+	{	
+		"ControlName"	"CExLabel"
+		"fieldName"		"CostLabelBG"
+		"font"			"RobotoRegular12"
+		"fgcolor"		"0 0 0 210"
+		"xpos"			"42"
+		"ypos"			"17"
+		"zpos"			"1"
+		"wide"			"86"
+		"tall"			"14"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%metal%"
+		"textAlignment"	"Left"	
+	}
+	
 	"ModeLabel"
 	{	
 		"ControlName"	"CExLabel"
@@ -76,6 +147,7 @@
 		"enabled"		"1"
 		"labelText"		""
 		"textAlignment"	"East"	
+		"fgcolor"		"0 255 0 255"
 	}
 		
 	"NumberBg"	
@@ -91,7 +163,7 @@
 		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"ico_key_blank"
-		"iconColor"		"255 255 255 255"
+		"iconColor"		"0 255 0 255"
 	}
 	
 	"NumberLabel"
@@ -99,7 +171,6 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
 		"font"			"RobotoRegular18"
-		"fgcolor"		"115 115 115 225"
 		"xpos"			"0"
 		"ypos"			"90"
 		"zpos"			"1"
@@ -113,5 +184,6 @@
 		"textAlignment"	"Center"
 		"dulltext"		"1"
 		"brighttext"	"0"
+		"fgcolor"		"20 180 20 205"
 	}
 }

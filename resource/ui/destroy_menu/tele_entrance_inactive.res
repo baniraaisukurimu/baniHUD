@@ -41,7 +41,7 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"NotBuiltLabel"
-		"font"			"RobotoRegular12"
+		"font"			"RobotoRegular10"
 		"xpos"			"10"
 		"ypos"			"48"
 		"zpos"			"2"
@@ -62,7 +62,7 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"NotBuiltLabelBG"
-		"font"			"RobotoRegular12"
+		"font"			"RobotoRegular10"
 		"xpos"			"10"
 		"ypos"			"48"
 		"zpos"			"2"
@@ -71,8 +71,8 @@
 		"autoResize"	"0"
 		"fgcolor"		"0 0 0 210"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"labelText"		"#TF_NotBuilt"
 		"textAlignment"	"Center"
 		"dulltext"		"0"

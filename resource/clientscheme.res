@@ -2845,6 +2845,16 @@ Scheme
 		// Fonts used in baniHUD
 
 		//regular
+		"RobotoRegular10"
+		{
+			"1"
+			{
+				"name"		"Roboto Regular"
+				"tall"		"10"
+				"antialias" "1"
+			}
+		}
+		
 		"RobotoRegular12"
 		{
 			"1"
@@ -2937,6 +2947,16 @@ Scheme
 
 
 		//bold
+		"RobotoBlack10"
+		{
+			"1"
+			{
+				"name"		"Roboto Black"
+				"tall"		"10"
+				"antialias" "1"
+			}
+		}
+		
 		"RobotoBlack12"
 		{
 			"1"
@@ -3022,6 +3042,107 @@ Scheme
 			"1"
 			{
 				"name"		"Roboto Black"
+				"tall"		"48"
+				"antialias" "1"
+			}
+		}
+		
+		//thin
+		"RobotoThin10"
+		{
+			"1"
+			{
+				"name"		"Roboto Thin"
+				"tall"		"10"
+				"antialias" "1"
+			}
+		}
+		
+		"RobotoThin12"
+		{
+			"1"
+			{
+				"name"		"Roboto Thin"
+				"tall"		"12"
+				"antialias" "1"
+			}
+		}
+
+		"RobotoThin16"
+		{
+			"1"
+			{
+				"name"		"Roboto Thin"
+				"tall"		"16"
+				"antialias" "1"
+			}
+		}
+
+		"RobotoThin18"
+		{
+			"1"
+			{
+				"name"		"Roboto Thin"
+				"tall"		"18"
+				"antialias" "1"
+			}
+		}
+
+		"RobotoThin20"
+		{
+			"1"
+			{
+				"name"		"Roboto Thin"
+				"tall"		"20"
+				"antialias" "1"
+			}
+		}
+
+		"RobotoThin24"
+		{
+			"1"
+			{
+				"name"		"Roboto Thin"
+				"tall"		"24"
+				"antialias" "1"
+			}
+		}
+
+		"RobotoThin30"
+		{
+			"1"
+			{
+				"name"		"Roboto Thin"
+				"tall"		"30"
+				"antialias" "1"
+			}
+		}
+
+		"RobotoThin36"
+		{
+			"1"
+			{
+				"name"		"Roboto Thin"
+				"tall"		"36"
+				"antialias" "1"
+			}
+		}
+
+		"RobotoThin42"
+		{
+			"1"
+			{
+				"name"		"Roboto Thin"
+				"tall"		"42"
+				"antialias" "1"
+			}
+		}
+
+		"RobotoThin48"
+		{
+			"1"
+			{
+				"name"		"Roboto Thin"
 				"tall"		"48"
 				"antialias" "1"
 			}

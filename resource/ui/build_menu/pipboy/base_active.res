@@ -1,4 +1,4 @@
-"Resource/UI/build_menu/base_cant_afford.res"
+"Resource/UI/build_menu/base.res"
 {
 	"ItemNameLabel"
 	{	
@@ -19,13 +19,14 @@
 		"textAlignment"	"Center"
 		"dulltext"		"0"
 		"brighttext"	"0"
+		"fgcolor"		"0 255 0 255"
 	}
-	
-	"ItemBackground"	
+
+	"ItemBackground"
 	{
 		"ControlName"	"CIconPanel"
 		"fieldName"		"ItemBackground"
-		"xpos"			"-10"
+		"xpos"			"4"
 		"ypos"			"14"
 		"zpos"			"0"
 		"wide"			"98"
@@ -33,48 +34,24 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"scaleImage"	"1"	
-		"icon"			"hud_menu_item_bg_outline"
-		"iconColor"		"ProgressOffWhiteTransparent"
+		"icon"			"hud_menu_item_bg"
+		"iconColor"		"0 0 0 255"
 	}
 	
-	"CantBuildReason"
-	{	
-		"ControlName"	"CExLabel"
-		"fieldName"		"CantBuildReason"
-		"font"			"RobotoRegular10"
-		"fgcolor"		"201 33 35 225"
-		"xpos"			"10"
-		"ypos"			"36"
+	"BuildingIcon"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"BuildingIcon"
+		"xpos"			"22"
+		"ypos"			"33"
 		"zpos"			"2"
-		"wide"			"80"
-		"tall"			"40"
-		"autoResize"	"0"
-		"pinCorner"		"0"
+		"wide"			"56"
+		"tall"			"56"
 		"visible"		"1"
 		"enabled"		"1"
-		"labelText"		"#Hud_Menu_Build_Cant_Afford"
-		"textAlignment"	"Center"
-	}
-	
-	"CantBuildReasonBG"
-	{	
-		"ControlName"	"CExLabel"
-		"fieldName"		"CantBuildReasonBG"
-		"font"			"RobotoRegular10"
-		"xpos"			"8"
-		"ypos"			"47"
-		"zpos"			"2"
-		"wide"			"85"
-		"tall"			"19"
-		"autoResize"	"0"
-		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
-		"fgcolor"		"0 0 0 210"
-		"labelText"		"#Hud_Menu_Build_Cant_Afford"
-		"textAlignment"	"Center"
-		"dulltext"		"0"
-		"brighttext"	"0"
+		"scaleImage"	"1"	
+		"icon"			"hud_menu_sentry_build"
+		"iconColor"		"0 255 0 255"
 	}
 	
 	"MetalIcon"	
@@ -90,7 +67,7 @@
 		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"ico_metal"
-		"iconColor"		"201 33 35 225"
+		"iconColor"		"0 255 0 225"
 	}
 	
 	"MetalIconBG"	
@@ -109,14 +86,12 @@
 		"iconColor"		"60 60 60 100"
 	}
 	
-	
-	
 	"CostLabel"
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"CostLabel"
 		"font"			"RobotoRegular12"
-		"fgcolor"		"201 33 35 225"
+		"fgcolor"		"0 255 0 225"
 		"xpos"			"42"
 		"ypos"			"17"
 		"zpos"			"1"
@@ -129,6 +104,7 @@
 		"labelText"		"%metal%"
 		"textAlignment"	"Left"	
 	}
+	
 	
 	"CostLabelBG"
 	{	
@@ -162,8 +138,8 @@
 		"tall"			"13"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"labelText"		""
 		"textAlignment"	"East"	
 	}
@@ -181,7 +157,7 @@
 		"enabled"		"0"
 		"scaleImage"	"1"	
 		"icon"			"ico_key_blank"
-		"iconColor"		"255 255 255 255"
+		"iconColor"		"0 255 0 255"
 	}
 	
 	"NumberLabel"
@@ -189,7 +165,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
 		"font"			"RobotoRegular18"
-		"fgcolor"		"201 33 35 225"
+		"fgcolor"		"0 255 0 225"
 		"xpos"			"0"
 		"ypos"			"90"
 		"zpos"			"1"

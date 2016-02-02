@@ -4,12 +4,11 @@
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"ItemNameLabel"
-		"font"			"RobotoRegular16"
+		"font"			"Default"
 		"xpos"			"6"
-		"ypos"			"10"
+		"ypos"			"0"
 		"zpos"			"1"
 		"wide"			"84"
-		"fgcolor"		"115 115 115 225"
 		"tall"			"15"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -17,9 +16,10 @@
 		"enabled"		"1"
 		"labelText"		"#TF_Object_Sentry"
 		"labelText_lodef"		"#TF_Object_Sentry_360"
-		"textAlignment"	"Center"
+		"textAlignment"	"Left"
 		"dulltext"		"0"
 		"brighttext"	"0"
+		"fgcolor"		"0 255 0 255"
 	}
 	
 	"ItemBackground"	
@@ -31,24 +31,23 @@
 		"zpos"			"0"
 		"wide"			"98"
 		"tall"			"105"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"hud_menu_item_bg_outline"
-		"iconColor"		"ProgressOffWhiteTransparent"
+		"iconColor"		"0 0 0 255"
 	}
 	
 	"CantBuildReason"
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"CantBuildReason"
-		"font"			"RobotoRegular10"
+		"font"			"Default"
 		"xpos"			"10"
 		"ypos"			"48"
 		"zpos"			"2"
 		"wide"			"80"
 		"tall"			"18"
-		"fgcolor"		"115 115 115 225"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -58,7 +57,42 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 	}
-
+	
+	"MetalIcon"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"MetalIcon"
+		"xpos"			"10"
+		"ypos"			"18"
+		"zpos"			"1"
+		"wide"			"10"
+		"tall"			"10"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"ico_metal"
+		"iconColor"		"0 255 0 255"
+	}
+	
+	"CostLabel"
+	{	
+		"ControlName"	"CExLabel"
+		"fieldName"		"CostLabel"
+		"font"			"HudFontSmall"
+		"fgcolor"		"0 255 0 255"
+		"xpos"			"23"
+		"ypos"			"17"
+		"zpos"			"1"
+		"wide"			"84"
+		"tall"			"13"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%metal%"
+		"textAlignment"	"Left"	
+	}
+	
 	"ModeLabel"
 	{	
 		"ControlName"	"CExLabel"
@@ -87,21 +121,21 @@
 		"zpos"			"0"
 		"wide"			"18"
 		"tall"			"18"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"scaleImage"	"1"	
 		"icon"			"ico_key_blank"
-		"iconColor"		"255 255 255 255"
+		"iconColor"		"0 255 0 255"
 	}
 	
 	"NumberLabel"
 	{	
 		"ControlName"	"CExLabel"
 		"fieldName"		"NumberLabel"
-		"font"			"RobotoRegular18"
-		"fgcolor"		"115 115 115 225"
+		"font"			"HudMenuNumberFont"
+		"fgcolor"		"Black"
 		"xpos"			"0"
-		"ypos"			"90"
+		"ypos"			"98"
 		"zpos"			"1"
 		"wide"			"100"
 		"tall"			"18"
@@ -113,5 +147,6 @@
 		"textAlignment"	"Center"
 		"dulltext"		"1"
 		"brighttext"	"0"
+		"fgcolor"		"0 255 0 255"
 	}
 }
