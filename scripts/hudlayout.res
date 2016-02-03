@@ -1044,11 +1044,11 @@
 		"visible" 		"1"
 		"enabled" 		"1"
 		"xpos"			"c-235"
-		"ypos"			"c-52"
-		"ypos_hidef"	"c-42"
+		"ypos"			"0"
+		"ypos_hidef"	"480"
 		"ypos_lodef"	"c-42"
-		"wide"			"470"
-		"tall"			"200"	[$WIN32]
+		"wide"			"f0"
+		"tall"			"480"	[$WIN32]
 		"tall"			"180"	[$X360]
 		"PaintBackgroundType"	"0"
 	}	
