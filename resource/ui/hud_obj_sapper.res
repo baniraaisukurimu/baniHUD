@@ -6,8 +6,8 @@
 		"fieldName"		"BuildingStatusItem"
 		"xpos"			"0"
 		"ypos"			"0"
-		"wide"			"150"
-		"tall"			"31"
+		"wide"			"180"
+		"tall"			"55"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -15,20 +15,37 @@
 		"tabPosition"	"0"
 	}
 	
+	
 	"Background"
 	{
-		"ControlName"	"CIconPanel"
+		"ControlName"	"Imagepanel"
 		"fieldName"		"Background"
 		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"-1"
 		"wide"			"120"
-		"tall"			"31"
+		"tall"			"34"
+		"visible"		"0"
+		"enabled"		"0"
+		"scaleImage"	"1"	
+		"fillcolor"		"0 0 0 255"
+		"alpha"			"175"
+	}
+	
+	"Background4"
+	{
+		"ControlName"	"Imagepanel"
+		"fieldName"		"Background4"
+		"xpos"			"12"
+		"ypos"			"12"
+		"zpos"			"-1"
+		"wide"			"140"
+		"tall"			"34"
 		"visible"		"1"
 		"enabled"		"1"
 		"scaleImage"	"1"	
-		"icon"			"obj_status_background_red"
-		"iconColor"		"255 255 255 255"
+		"fillcolor"		"0 0 0 255"
+		"alpha"			"175"
 	}
 	
 	"Icon"

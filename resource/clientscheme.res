@@ -21,6 +21,7 @@ Scheme
 		// base colors
 		"Orange"			"178 82 22 255"
 		"OrangeDim"			"178 82 22 120"
+		"Lowhp"				"235 0 0 200"
 		"LightOrange"		"188 112 0 128"
 		"GoalOrange"		"255 133 0"
 		"TFOrange"			"145 73 59 255"
@@ -2851,6 +2852,16 @@ Scheme
 			{
 				"name"		"Roboto Regular"
 				"tall"		"10"
+				"antialias" "1"
+			}
+		}
+		
+		"RobotoRegular11"
+		{
+			"1"
+			{
+				"name"		"Roboto Regular"
+				"tall"		"11"
 				"antialias" "1"
 			}
 		}
