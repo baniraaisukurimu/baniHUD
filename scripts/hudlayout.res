@@ -299,7 +299,7 @@
 		"visible" 	"0"
 		"enabled" 	"1"
 		"xpos"		"c-100"
-		"ypos"		"420"
+		"ypos"		"415"
 		"wide"	 	"260"
 		"tall"	 	"35"
 		"tall_minmode"	 	"28"
@@ -839,13 +839,13 @@
 	{
 		"fieldName"				"HudControlPointIcons"
 		"xpos"					"0"
-		"ypos"					"410"
+		"ypos"					"430"
 		"wide"					"f0"
-		"tall"					"200"
+		"tall"					"150"
 		"visible"				"1"
 		"enabled"				"1"
-		"separator_width"		"9"	// distance between the icons (including their backgrounds)
-		"separator_height"		"7"
+		"separator_width"		"6"	// distance between the icons (including their backgrounds)
+		"separator_height"		"3"
 		"height_offset"			"0"	[$WIN32] // distance from the bottom of the panel
 		"height_offset"			"26"	[$X360]
 	}
@@ -1502,8 +1502,8 @@
 		"zpos"			"-100"
 		"wide"			"f0"
 		"tall"			"480"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"image"			"replay/thumbnails/REFRACTnormal_transparentvmt"
 		"scaleImage"	"1"
 	}

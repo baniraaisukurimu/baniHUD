@@ -7,7 +7,7 @@
 		"xpos"				"0" // Was 13
 		"ypos"				"-37"
 		"zpos"				"-1"
-		"wide"				"252"
+		"wide"				"f0"
 		"tall"	 			"2"
 		"autoResize"			"0"
 		"pinCorner"			"0"
@@ -58,7 +58,8 @@
 		"pinCorner"			"0"
 		"visible"			"1"
 		"enabled"			"1"
-		"fillcolor"			"25 25 25 200"
+		"fillcolor"			"0 0 0 255"
+		"alpha"				"175"
 		"PaintBackgroundType"	"0"
 	}
 	"TargetIDBG_Spec_Red"
@@ -112,7 +113,7 @@
 		"xpos"				"60"
 		"ypos"				"18"
 		"zpos"				"1"
-		"wide"				"280"
+		"wide"				"f0"
 		"tall"				"10"
 		"autoResize"			"0"
 		"pinCorner"			"0"
@@ -156,6 +157,24 @@
 		"image"			"../hud/leaderboard_class_heavy"
 		"scaleImage"		"1"
 	}
+	
+		"KillStreakIcon"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"KillStreakIcon"
+		"xpos"			"8"
+		"xpos_minmode"	"30"
+		"ypos"			"18"
+		"ypos_minmode"	"16"
+		"zpos"			"12"
+		"wide"			"8"
+		"tall"			"8"
+		"visible"		"0"
+		"enabled"		"1"
+		"image"			"../hud/leaderboard_streak"
+		"scaleImage"	"1"
+	}
+	
 	
 	"MoveableSubPanel"
 	{

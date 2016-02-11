@@ -396,7 +396,7 @@ event HudHealthDyingPulse
 // call to loop HudHealthDyingPulse
 event HudHealthDyingPulseLoop
 {
-	RunEvent HudHealthDyingPulse 0.001
+	RunEvent HudHealthDyingPulse 0.01
 }
 
 event HudHealthDyingPulseStop
